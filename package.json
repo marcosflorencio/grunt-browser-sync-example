@@ -1,14 +1,13 @@
 {
   "name": "grunt-browser-sync-example",
   "version": "0.1.1",
-  "description": "Exemplo de browser-sync utlizando uma task no grunt",
+    "description": "Exemplo de browser-sync utlizando uma task no grunt",
   "engines": {
     "node": "0.12.2"
   },
   "license": "MIT",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "load-grunt-tasks": "^3.5.0",
     "grunt-browser-sync": "^2.2.0"
   }
 }

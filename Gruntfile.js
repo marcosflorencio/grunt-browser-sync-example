@@ -1,21 +1,23 @@
 module.exports = function(grunt) {
-  require('load-grunt-tasks')(grunt);
   grunt.initConfig({
     browserSync: {
-      bsFiles: {
-        src: [
-         '**/*.html',
-         '**/*.css',
-         '**/*.js' 
-        ]
-      },
-      options: {
-        server: {
-          baseDir: './'
+      dev:{
+        bsFiles: {
+          src: [
+          '**/*.html',
+          '**/*.css',
+          '**/*.js' 
+          ]
+        },
+        options: {
+          server: {
+            baseDir: './'
+          }
+          // , proxy: '' 
         }
       }
     }
   });
-
+  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.registerTask('browser-sync', ['browserSync']);
 };
